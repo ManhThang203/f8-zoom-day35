@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 90vh;
+}
+.content {
+  overflow: hidden;
+}
+.img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.title {
+  color: #e07816;
+  font-size: 2rem;
+  font-weight: 600;
+}

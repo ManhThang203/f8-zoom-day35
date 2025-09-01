@@ -1,0 +1,127 @@
+.titleHeading {
+  margin: 3rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #42d8d1;
+  text-align: center;
+}
+.gird {
+  max-width: 120rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem) scale(1.02);
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.titleCard {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title {
+  flex: 1;
+  color: #666;
+  font-size: 1.4rem;
+  height: 500px;
+  margin-bottom: 1.5rem;
+  display: -webkit-box; /* Bật box flex dọc */
+  -webkit-box-orient: vertical; /* Hướng dọc */
+  -webkit-line-clamp: 3; /* Số dòng muốn hiển thị */
+  overflow: hidden; /* Ẩn phần dư */
+  text-overflow: ellipsis;
+}
+
+.btn {
+  align-self: flex-start;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 550;
+  color: #fff;
+  background: #42d8d1;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1.5rem);
+}
+.modalContent {
+  background: #fff;
+  max-width: 50rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.modalContent h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.modalContent button {
+  display: block;
+  margin-left: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 550;
+  background: #42d8d1;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 0.5rem solid #5bdde6;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.main-content span,
+.footer-content span {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

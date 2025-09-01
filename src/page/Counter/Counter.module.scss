@@ -1,0 +1,82 @@
+.wapper {
+  width: 35rem;
+  height: 55rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.container div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 30rem;
+  height: 40rem;
+
+  border-radius: 1rem;
+
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+.container div:first-child p:first-child {
+  font-size: 7rem;
+}
+.container div:first-child p:last-child {
+  font-size: 3rem;
+}
+.zero p {
+  color: gray;
+}
+.positive p {
+  color: green;
+}
+.negative p {
+  color: red;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.btn button {
+  margin-top: 1rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  background: #edf4ff;
+}
+.btn button:hover {
+  transform: scale(0.9);
+}
+.back-home {
+  position: fixed;
+  top: 3.5rem;
+  left: 4rem;
+}
+.back-home button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  color: #ccc;
+  background: #fff;
+}
+.back-home button:hover a {
+  color: #000;
+}
+.back-home button:hover {
+  transform: scale(0.9);
+}

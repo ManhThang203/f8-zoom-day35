@@ -8,31 +8,31 @@ function Navigation() {
     },
     {
       to: "/counter",
-      title: "counter",
+      title: "Counter",
     },
     {
       to: "/todo",
-      title: "todo",
+      title: "Todo",
     },
     {
       to: "/profile",
-      title: "profile",
+      title: "Profile",
     },
     {
       to: "/products",
-      title: "products",
+      title: "Products",
     },
     {
       to: "/comments",
-      title: "comments",
+      title: "Comments",
     },
     {
       to: "/weather",
-      title: "weather",
+      title: "Weather",
     },
     {
       to: "/buttons",
-      title: "buttons",
+      title: "Buttons",
     },
   ];
   return (

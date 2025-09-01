@@ -1,4 +1,10 @@
+import Button from "../../components/Button";
+// import styles from "./Buttons.module.scss";
 function Buttons() {
-  return <h1>Buttons</h1>;
+  return (
+    <>
+      <Button>Click me</Button>
+    </>
+  );
 }
 export default Buttons;
