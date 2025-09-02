@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Comments.module.scss";
+import Button from "../../components/Button";
 function Comments() {
   const [comments, setComments] = useState([]);
   const [name, setName] = useState("");
@@ -68,13 +69,9 @@ function Comments() {
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
-        <button
-          className={styles.btn}
-          type="submit"
-          disabled={!name || !email || !body}
-        >
-          gửi bình luận
-        </button>
+        <Button disabled={!name || !email || !body} rounded>
+          Gửi bình luận
+        </Button>
       </form>
       <div className={styles.container}>
         {comments.map((c) => (

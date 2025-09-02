@@ -34,17 +34,8 @@
   width: 25rem;
   border-radius: 0.5rem;
 }
-.main button {
-  padding: 10px;
-  width: 8rem;
-  border-radius: 0.5rem;
-  font-size: 1.7rem;
-  font-weight: 500;
-  background: #c8c8c8;
-}
-.main button:hover {
+.btn:hover {
   transform: scale(0.9);
-  background: #fff;
 }
 .empty {
   margin-top: 1.5rem;
@@ -71,7 +62,7 @@
   backdrop-filter: blur(2rem);
   border-radius: 1rem;
 }
-.completed span {
+.completed .labelWrapper span {
   text-decoration: line-through;
   color: #ccc;
 }
@@ -93,15 +84,8 @@
   font-weight: 600;
 }
 .btnDeletedTodo {
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: 1.7rem;
-  font-weight: 500;
-  background: #c8c8c8;
-  cursor: pointer;
-}
-.btnDeletedTodo:hover {
-  background: #fff;
+  color: #fff;
+  text-decoration: none;
 }
 .stats {
   margin: 1rem 0;

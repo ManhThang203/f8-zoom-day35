@@ -5,7 +5,7 @@ function Buttons() {
   return (
     <div className={styles.wapper}>
       <div className={styles.container}>
-        <Button>Click me</Button>
+        <Button title="hello">Click me</Button>
         <Button primary>Primary Button</Button>
         <Button href="https://google.com" target="_blank">
           Go to Google
@@ -24,18 +24,18 @@ function Buttons() {
           </Button>
         </div>
         <Button onClick={() => alert("Clicked!")}>Click Alert</Button>
-
-        <div className={styles.large}>
-          <Button size="large" primary>
-            Click me
-          </Button>
-          <Button size="large" bordered>
-            Large
-          </Button>
-          <Button size="large" rounded>
-            Click me
-          </Button>
-        </div>
+        <Button disabled onClick={() => alert("Should not show")}>
+          Disabled Button
+        </Button>
+        <Button loading onClick={() => console.log("Should not log")}>
+          Loading Button
+        </Button>
+        <Button className={styles.myCustomClass} primary>
+          Custom Styled
+        </Button>
+        <Button primary>
+          <span>📧</span> Send Email
+        </Button>
       </div>
     </div>
   );

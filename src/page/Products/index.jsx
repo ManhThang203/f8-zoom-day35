@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Products.module.scss";
+import Button from "../../components/Button";
+
 function Products() {
   const [posts, setposts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,9 +31,10 @@ function Products() {
           <div className={styles.card} key={post.id}>
             <h2 className={styles.titleCard}>{post.title}</h2>
             <p className={styles.title}>{post.body}</p>
-            <button className={styles.btn} onClick={() => handleModal(post.id)}>
+
+            <Button className={styles.btn} onClick={() => handleModal(post.id)}>
               Chi tiết sản phẩm
-            </button>
+            </Button>
           </div>
         ))}
       </div>
@@ -44,7 +47,7 @@ function Products() {
           >
             <h2>{selectPost.title}</h2>
             <p>{selectPost.body}</p>
-            <button onClick={handlCloseModal}>Đóng</button>
+            <Button onClick={handlCloseModal}>Đóng</Button>
           </div>
         </div>
       )}

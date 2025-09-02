@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Todo.module.scss";
+import Button from "../../components/Button";
 import "../../assets/styles/main.scss";
 let uninId = 0;
 function Todo() {
@@ -51,7 +52,9 @@ function Todo() {
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Nhập task mới..."
           />
-          <button type="submit">Add</button>
+          <Button className={styles.btn} type="submit" primary rounded>
+            Add
+          </Button>
         </div>
         {todos.length === 0 ? (
           <div className={styles.empty}>
@@ -72,12 +75,13 @@ function Todo() {
                   />
                   <span>{todo.text}</span>
                 </label>
-                <button
+                <Button
                   className={styles.btnDeletedTodo}
                   onClick={() => handleDeleteTodo(todo.id)}
+                  rounded
                 >
                   Delete
-                </button>
+                </Button>
               </li>
             ))}
           </ul>
