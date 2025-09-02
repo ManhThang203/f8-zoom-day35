@@ -49,34 +49,15 @@
 }
 .btn button {
   margin-top: 1rem;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 0.5rem;
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 500;
   background: #edf4ff;
 }
 .btn button:hover {
   transform: scale(0.9);
 }
-.back-home {
-  position: fixed;
-  top: 3.5rem;
-  left: 4rem;
-}
-.back-home button a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-  border-radius: 1rem;
-  color: #ccc;
-  background: #fff;
-}
-.back-home button:hover a {
+.btn button i {
   color: #000;
-}
-.back-home button:hover {
-  transform: scale(0.9);
 }

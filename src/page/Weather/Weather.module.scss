@@ -48,8 +48,9 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+.temperature span {
   font-size: 7rem;
-
   color: #fff;
   font-weight: 600;
 }
@@ -84,6 +85,9 @@
   background: #fff;
   padding: 2rem;
   border-radius: 50%;
+}
+.footer .btn i {
+  color: #000;
 }
 .footer .btn:hover i {
   animation: rotate 0.2s linear forwards;

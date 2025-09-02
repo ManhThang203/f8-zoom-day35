@@ -106,7 +106,7 @@ function Weather() {
           )}
           <div className={styles.footer}>
             <button className={styles.btn} onClick={handleRefresh}>
-              <i className="fa-solid fa-rotate-right"></i>
+              <i className="fa-solid fa-arrow-rotate-right"></i>
             </button>
           </div>
         </div>

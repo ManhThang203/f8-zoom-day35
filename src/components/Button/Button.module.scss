@@ -1,0 +1,37 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: 550;
+
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) border-box;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+
+  &:hover {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    color: #fff;
+  }
+}
+.primary {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.bordered {
+  border: 2px solid transparent;
+}
+.rounded {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+  border-radius: 12px;
+}
+.small {
+  padding: 10px 12px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.medium {
+  padding: 12px 14px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.large {
+  padding: 14px 16px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
